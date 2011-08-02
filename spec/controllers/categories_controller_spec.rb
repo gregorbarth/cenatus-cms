@@ -12,7 +12,7 @@ describe CategoriesController do
       Category.stub!(:find).and_return([@category])
     end
 
-#add this test back in if you actually want an index view in your project
+
     # it "should be successful" do
     #      get 'index'
     #      response.should be_success

@@ -1,4 +1,8 @@
 CenatusCms::Application.routes.draw do
+  resources :content_areas
+
+  resources :pages
+
   resources :categories
 
   resources :assets
