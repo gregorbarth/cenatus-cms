@@ -1,43 +1,15 @@
 class PagesController < ApplicationController
 
-  def index
-    @pages = Page.all
-
-  end
-
-
-  def show
-    @page = Page.find(params[:id])
-
-  end
-
-
-  def new
-    @page = Page.new
-
-  end
-
-
-  def edit
-    @page = Page.find(params[:id])
-  end
-
-
-  def create
-    @page = Page.new(params[:page])
-
-  end
-
-
-  def update
-    @page = Page.find(params[:id])
-
-  end
-
-
-  def destroy
-    @page = Page.find(params[:id])
-    @page.destroy
-
-  end
+  
+  def dynamic
+    slug= params[:slug].blank? ? "home" : params[:slug]
+    
+    @page = Page.where(:slug => slug).limit(1).first
+    
+    if @page.blank?
+      raise ActiveRecord::RecordNotFound
+    end
+    
+    layout_name = @page.blank? ? "home" : @page.name.downcase
+  end    
 end

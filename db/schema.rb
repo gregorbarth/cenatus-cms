@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110802160846) do
+ActiveRecord::Schema.define(:version => 20110803111027) do
 
   create_table "assets", :force => true do |t|
     t.string   "name"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(:version => 20110802160846) do
     t.integer  "sort_order"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "page_id"
   end
 
   create_table "content_areas_pages", :id => false, :force => true do |t|
@@ -48,6 +49,13 @@ ActiveRecord::Schema.define(:version => 20110802160846) do
     t.string   "name"
     t.string   "slug"
     t.integer  "sort_order"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pages_content_areas", :id => false, :force => true do |t|
+    t.integer  "page_id"
+    t.integer  "content_area_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
