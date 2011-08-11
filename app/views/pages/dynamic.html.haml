@@ -1,8 +1,7 @@
 %h1= @page.name
-%p= @page.slug
-%p= @page.sort_order
 
 %p
   %b content-areas	
   - for content_area in @page.content_areas do
-    %p= content_area.name
+    %p= content_area.name     
+    %p= content_area.content
