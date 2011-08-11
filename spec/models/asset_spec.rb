@@ -1,6 +1,12 @@
 require 'spec_helper'
 
 describe Asset do
+  
+  before :each do
+    # Asset.stub!(:find).and_return(mock_model(Asset))
+    # @asset = mock_model(Asset)
+  end
+  
   it "can be instantiated" do
     Asset.new.should be_an_instance_of(Asset)
   end                                           
@@ -11,9 +17,14 @@ describe Asset do
   
   it "has many pages" do
     Asset.reflect_on_association(:pages).should_not be_nil
-    @asset = Asset.new
-    @asset.pages.length == 0
+    @asset_assoc = Asset.new
+    @asset_assoc.pages.length == 0
   end
   
+  it "has a name that is required" do
+    defined?(:name).should_not be_nil
+    @asset = Asset.new
+    @asset.should_not be_valid
+  end  
   
 end
