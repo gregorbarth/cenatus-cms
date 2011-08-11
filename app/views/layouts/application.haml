@@ -6,6 +6,7 @@
     = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
     = stylesheet_link_tag 'compiled/print.css', :media => 'print'
     = stylesheet_link_tag 'compiled/application.css'
+    = stylesheet_link_tag 'compiled/link_icons.css', :media => 'screen, projection'
     = stylesheet_link_tag :all
     /[if lt IE 8]
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
@@ -53,6 +54,8 @@
   
       #footer
         %hr
+        
+        &copy; Cenatus
         
         #grid_debug{:style => "float:right"}
           %a#show_grid

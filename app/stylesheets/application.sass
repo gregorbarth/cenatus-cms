@@ -1,14 +1,13 @@
-// blueprint mixins
+@import "partials/base"
 
-+link-icons
+// our mixins
+=less-styled-link
+  :text-decoration none
 
-// colors
+// our constants
 $dark_blue: #3d66ac
 $sky_blue:  #90b3df
 
-// link mixin
-=less-styled-link
-  :text-decoration none
 
 body
   color: $dark_blue
@@ -18,5 +17,16 @@ body
 
 h1, h2, h3, h4, h5, h6
   +header-text
-  text-transform: uppercase
-
+  text-transform: uppercase      
+  
+  
+#header
+  #topnav
+    +horizontal-list-container
+    float: right
+    li
+      +horizontal-list-item
+      +column(2)
+      height: 100px
+      margin: 0px 3px
+      padding: 0px

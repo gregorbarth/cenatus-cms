@@ -1,6 +1,4 @@
 source 'http://rubygems.org'
-source 'http://gems.github.com'
-source 'http://gems.rubyforge.org/'
 
 gem 'rails', '3.0.9'
 
@@ -39,6 +37,9 @@ gem 'compass'
 gem 'aws-s3'    
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem "friendly_id", "~> 3.2.1"
+gem 'twitter', "= 1.2.0"
+gem 'acts_as_indexed'
+
 
 group :development, :test do
   gem "heroku_plus", :group => [:development]

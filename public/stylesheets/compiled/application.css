@@ -1,87 +1,141 @@
-/*
-Syntax error: Undefined mixin 'link-icons'.
-        on line 3 of /Volumes/data/development/cenatus-cms/app/stylesheets/application.sass, in `link-icons'
-        from line 3 of /Volumes/data/development/cenatus-cms/app/stylesheets/application.sass
+/* line 17, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-1: // blueprint mixins
-2: 
-3: +link-icons
-4: 
-5: // colors
-6: $dark_blue: #3d66ac
-7: $sky_blue:  #90b3df
-8: 
+/* line 20, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
 
-Backtrace:
-/Volumes/data/development/cenatus-cms/app/stylesheets/application.sass:3:in `link-icons'
-/Volumes/data/development/cenatus-cms/app/stylesheets/application.sass:3
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:169:in `visit_mixin'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/tree/root_node.rb:20:in `render'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/engine.rb:291:in `_render'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/engine.rb:239:in `block in render'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/util.rb:297:in `silence_sass_warnings'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/engine.rb:239:in `render'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/plugin/compiler.rb:175:in `each'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/plugin/compiler.rb:173:in `each'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/plugin.rb:81:in `update_stylesheets'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/plugin.rb:54:in `check_for_updates'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/sass-3.1.5/lib/sass/plugin/rack.rb:51:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/warden-1.0.5/lib/warden/manager.rb:35:in `block in call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/warden-1.0.5/lib/warden/manager.rb:34:in `catch'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/warden-1.0.5/lib/warden/manager.rb:34:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `block in call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:421:in `_run_call_callbacks'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
-<internal:prelude>:10:in `synchronize'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
-/Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
-/Users/matt/.rvm/rubies/ruby-1.9.2-p136/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-/Users/matt/.rvm/rubies/ruby-1.9.2-p136/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-/Users/matt/.rvm/rubies/ruby-1.9.2-p136/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'link-icons'.\A         on line 3 of /Volumes/data/development/cenatus-cms/app/stylesheets/application.sass, in `link-icons'\A         from line 3 of /Volumes/data/development/cenatus-cms/app/stylesheets/application.sass\A \A 1: // blueprint mixins\A 2: \A 3: +link-icons\A 4: \A 5: // colors\A 6: $dark_blue: #3d66ac\A 7: $sky_blue:  #90b3df\A 8: "; }
+/* line 22, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../../../app/stylesheets/application.sass */
+body {
+  color: #3d66ac;
+}
+/* line 14, ../../../app/stylesheets/application.sass */
+body a {
+  text-decoration: underline;
+  color: #3d66ac;
+}
+/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body a:visited {
+  color: #3d66ac;
+}
+/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body a:focus {
+  color: #3d66ac;
+}
+/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body a:hover {
+  color: #90b3df;
+}
+/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body a:active {
+  color: #3d66ac;
+}
+
+/* line 18, ../../../app/stylesheets/application.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+/* line 24, ../../../app/stylesheets/application.sass */
+#header #topnav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  float: right;
+}
+/* line 27, ../../../app/stylesheets/application.sass */
+#header #topnav li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 70px;
+  height: 100px;
+  margin: 0px 3px;
+  padding: 0px;
+}
+/* line 48, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#header #topnav li:first-child, #header #topnav li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#header #topnav li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#header #topnav li.last {
+  padding-right: 0;
+}
+/* line 147, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #header #topnav li {
+  overflow-x: hidden;
+}
