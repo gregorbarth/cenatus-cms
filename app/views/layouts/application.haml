@@ -38,16 +38,18 @@
     #container
       #header
         %ul#topnav
-          %li= link_to "/link1","http://google.com"
-          %li= link_to "/link2","javascript:void(0);"
-          %li= link_to "/link3","javascript:void(0);"
+          %li= nav_link "link1","http://cenatus.org"
+          %li= nav_link "link2","http://netaudiolondon.org"
+          %li= nav_link "link3","javascript:void(0);"
       
       #sidebar
         %ul
-          %li= link_to "/link1","javascript:void(0);"
-          %li= link_to "/link2","javascript:void(0);"
-          %li= link_to "/link3","javascript:void(0);"
-          
+          %li= link_to "link1","javascript:void(0);"
+          %li= link_to "link2","javascript:void(0);"
+          - for page in Page.all do
+            %li= nav_link page.name, "/#{page.slug}"
+
+
       #content
         %hr
         = yield

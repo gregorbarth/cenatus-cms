@@ -39,6 +39,7 @@ gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem "friendly_id", "~> 3.2.1"
 gem 'twitter', "= 1.2.0"
 gem 'acts_as_indexed'
+gem 'RedCloth'
 
 
 group :development, :test do

@@ -5,9 +5,8 @@ CenatusCms::Application.routes.draw do
   resources :categories
   resources :assets
   devise_for :users
-  
-  
-  
+
+
   ##########################
   # culled from Rails Admin
   ##########################
@@ -47,11 +46,12 @@ CenatusCms::Application.routes.draw do
   #############################
 
 
- root :to => "pages#dynamic"
- 
- 
- match "page_content_areas/:page_id/:name" => "content_areas#page_content_areas", :as => :page_content_areas
- match "/:slug" => "pages#dynamic", :as => :pages
- 
+  match "sitemap.xml" => "sitemap#sitemap"
+  root :to => "pages#dynamic"
+
+
+  match "page_content_areas/:page_id/:name" => "content_areas#page_content_areas", :as => :page_content_areas
+  match "/:slug" => "pages#dynamic", :as => :pages
+
 
 end

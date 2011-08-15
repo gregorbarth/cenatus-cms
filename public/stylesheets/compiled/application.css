@@ -139,3 +139,8 @@ h1, h2, h3, h4, h5, h6 {
 * html #header #topnav li {
   overflow-x: hidden;
 }
+
+/* line 35, ../../../app/stylesheets/application.sass */
+.active {
+  font-weight: bold;
+}
