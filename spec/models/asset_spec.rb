@@ -27,4 +27,10 @@ describe Asset do
     @asset.should_not be_valid
   end  
   
+  it "has a description that is required" do
+    defined?(:description).should_not be_nil
+    @asset = Asset.new
+    @asset.should_not be_valid
+  end
+
 end
