@@ -1,5 +1,7 @@
 CenatusCms::Application.routes.draw do
 
+  get "sitemap/sitemap"
+
   resources :content_areas
   resources :pages
   resources :categories
