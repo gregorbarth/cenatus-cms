@@ -10,6 +10,12 @@ describe Category do
     @category = Category.new
     @category.pages.length == 0
   end
+
+  it "has a name that is required" do
+    defined?(:name).should_not be_nil
+    @category = Category.new
+    @category.should_not be_valid
+  end
                                             
 
 end

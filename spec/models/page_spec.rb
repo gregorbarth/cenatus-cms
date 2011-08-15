@@ -22,5 +22,17 @@ describe Page do
     @page = Page.new
     @page.categories.length == 0
   end
-    
+
+  it "has a name that is required" do
+    defined?(:name).should_not be_nil
+    @page = Page.new
+    @page.should_not be_valid
+  end
+
+  it "has a slug that is required" do
+    defined?(:name).should_not be_nil
+    @page = Page.new
+    @page.should_not be_valid
+  end
+
 end
