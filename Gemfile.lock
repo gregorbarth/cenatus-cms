@@ -19,6 +19,14 @@ GIT
       cocaine (>= 0.0.2)
       mime-types
 
+GIT
+  remote: https://github.com/kryzhovnik/rails_admin_tag_list_field.git
+  revision: 2e68c9d8cf694f194ca8ccc1bc0c04f6e1b4e5c7
+  specs:
+    rails_admin_tag_list_field (0.0.1)
+      builder (~> 2.1.0)
+      rails (~> 3.0.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -50,6 +58,7 @@ GEM
       activemodel (= 3.0.9)
       activesupport (= 3.0.9)
     activesupport (3.0.9)
+    acts-as-taggable-on (2.0.6)
     acts_as_indexed (0.7.3)
     addressable (2.2.6)
     arel (2.0.10)
@@ -227,6 +236,7 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth
+  acts-as-taggable-on
   acts_as_indexed
   aws-s3
   capybara
@@ -245,6 +255,7 @@ DEPENDENCIES
   paperclip!
   rails (= 3.0.9)
   rails_admin!
+  rails_admin_tag_list_field!
   rb-fsevent
   rspec-rails (>= 2.0.1)
   sqlite3 (= 1.3.3)
