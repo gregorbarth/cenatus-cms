@@ -115,6 +115,12 @@ RailsAdmin.config do |config|
       #  partial 'cenatus_tag_list'
       #end
 
+      field :parent_id, :enum do
+        enum do
+          Page.all.map{|p| [p.name, p.id]}
+        end
+      end
+
       field :content_areas
       field :assets, :has_and_belongs_to_many_association
       field :categories, :has_and_belongs_to_many_association

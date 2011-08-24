@@ -42,6 +42,7 @@ gem 'acts_as_indexed'
 gem 'RedCloth'
 gem 'acts-as-taggable-on'
 gem 'rails_admin_tag_list_field', :git => 'https://github.com/kryzhovnik/rails_admin_tag_list_field.git'
+gem 'acts_as_tree'
 
 group :development, :test do
   gem "heroku_plus", :group => [:development]

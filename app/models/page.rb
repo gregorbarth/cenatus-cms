@@ -7,4 +7,5 @@ class Page < ActiveRecord::Base
   validates_presence_of :name, :slug
 
   acts_as_taggable
+  acts_as_tree :order => "name"
 end
