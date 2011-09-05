@@ -2,7 +2,7 @@ xml.instruct!
 
 xml.urlset "xmlns" => "http://www.google.com/schemas/sitemap/0.84" do
   xml.url do
-    xml.loc "http://cenatus.org"
+    xml.loc CenatusCms::Application::SITE_URL
     xml.lastmod w3c_date(Time.now)
     xml.changefreq "always"
   end
@@ -20,7 +20,7 @@ xml.urlset "xmlns" => "http://www.google.com/schemas/sitemap/0.84" do
   #### page ####
   @pages.each do |page|
     xml.url do
-      xml.loc "http://cenatus.org/#{page.slug}"
+      xml.loc "#{CenatusCms::Application::SITE_URL}#{page.slug}"
       xml.lastmod w3c_date(page.updated_at)
       xml.changefreq "weekly"
       xml.priority 0.6

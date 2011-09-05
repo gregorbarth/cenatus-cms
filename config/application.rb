@@ -44,5 +44,14 @@ module CenatusCms
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+
+    # CMS config
+    # CenatusCms::Application::SITE_NAME
+    SITE_NAME = "Cenatus CMS"
+    SITE_URL = "http://cenatus.org/"
+    SITE_LOGO = "#{SITE_URL}images/home-logo.jpg"
+    FB_ADMIN = "541838134"
+    TWITTER_NAME = "mattspendlove"
   end
 end

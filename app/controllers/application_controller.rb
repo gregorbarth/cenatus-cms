@@ -22,11 +22,11 @@ class ApplicationController < ActionController::Base
   end   
 
   def set_facebook_headers
-    @og_title = "Cenatus CMS"
+    @og_title = CenatusCms::Application::SITE_NAME
     @og_type = "website"
-    @og_url = "http://somewhere.com"
-    @og_image = "http://somewhere.com/images/home-logo.jpg"
-    @og_site_name = "Cenatus CMS"
-    @og_admins = "541838134"
+    @og_url = CenatusCms::Application::SITE_URL
+    @og_image = CenatusCms::Application::SITE_LOGO
+    @og_site_name = CenatusCms::Application::SITE_NAME
+    @og_admins = CenatusCms::Application::FB_ADMIN
   end
 end

@@ -17,31 +17,37 @@ describe ApplicationController do
     it "assigns @og_title" do
       get 'index'
       assigns(:og_title).should_not be_nil
+      assigns(:og_title).should eq(CenatusCms::Application::SITE_NAME)
     end
 
     it "assigns @og_type" do
       get 'index'
       assigns(:og_type).should_not be_nil
+      assigns(:og_type).should eq("website")
     end
 
     it "assigns @og_url" do
       get 'index'
       assigns(:og_url).should_not be_nil
+      assigns(:og_url).should eq(CenatusCms::Application::SITE_URL)
     end
 
     it "assigns @og_image" do
       get 'index'
       assigns(:og_image).should_not be_nil
+      assigns(:og_image).should eq(CenatusCms::Application::SITE_LOGO)
     end
 
     it "assigns @og_site_name" do
       get 'index'
       assigns(:og_site_name).should_not be_nil
+      assigns(:og_site_name).should eq(CenatusCms::Application::SITE_NAME)
     end
 
     it "assigns @og_admins" do
       get 'index'
       assigns(:og_admins).should_not be_nil
+      assigns(:og_admins).should eq(CenatusCms::Application::FB_ADMIN)
     end
 
   end
