@@ -2,14 +2,16 @@
 %html
   %head
     %title= @page_title or "Cenatus CMS"
-    
-    = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
-    = stylesheet_link_tag 'compiled/print.css', :media => 'print'
-    = stylesheet_link_tag 'compiled/application.css'
-    = stylesheet_link_tag 'compiled/link_icons.css', :media => 'screen, projection'
+
+
+    = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'print.css', :media => 'print'
+    = stylesheet_link_tag 'application.css'
+    = stylesheet_link_tag 'link_icons.css', :media => 'screen, projection'
     = stylesheet_link_tag :all
+
     /[if lt IE 8]
-      = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
+      = stylesheet_link_tag 'ie.css', :media => 'screen, projection'    
 
     = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"
 

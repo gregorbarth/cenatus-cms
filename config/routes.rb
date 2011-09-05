@@ -55,7 +55,8 @@ CenatusCms::Application.routes.draw do
 
 
   match "page_content_areas/:page_id/:name" => "content_areas#page_content_areas", :as => :page_content_areas
-  match "/:slug" => "pages#dynamic", :as => :pages
+  match "/rails3" => "pages#dynamic", :as => :pages, :slug => "rails3"
+  # match "/:slug" => "pages#dynamic", :as => :pages
 
 
 end
