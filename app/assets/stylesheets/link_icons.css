@@ -46,13 +46,13 @@ body a[href$=".rdf"] {
 body a[href^="aim:"] {
   background-image: url('/images/link_icons/im.png?1313080837');
 }
-/* line 8, ../../../app/stylesheets/link_icons.sass */
+/* line 8, ../../stylesheets/link_icons.sass */
 body a.noicon {
   background: transparent none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-/* line 12, ../../../app/stylesheets/link_icons.sass */
+/* line 12, ../../stylesheets/link_icons.sass */
 body a#this-is-a-pdf-link {
   padding: 2px 22px 2px 0;
   margin: -2px 0;
