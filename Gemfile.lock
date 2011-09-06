@@ -96,6 +96,7 @@ GEM
       capybara (>= 1.0.0)
       cucumber (~> 1.0.0)
       nokogiri (>= 1.4.6)
+    dalli (1.1.1)
     devise (1.4.4)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.0.3)
@@ -255,6 +256,7 @@ DEPENDENCIES
   capybara
   compass
   cucumber-rails
+  dalli
   devise
   friendly_id (~> 3.2.1)
   growl
