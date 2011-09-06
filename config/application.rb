@@ -45,6 +45,8 @@ module CenatusCms
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    # turn off helper generation in scaffold
+    config.generators.helper = false
 
     # CMS config
     # CenatusCms::Application::SITE_NAME

@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 
     # cache = Dalli::Client.new 'mc5.ec2.northscale.net'
     begin
-      @tweets = Twitter.user_timeline("mattspendlove", {:count => 4})
+      @tweets = Twitter.user_timeline(CenatusCms::Application::TWITTER_NAME, {:count => 4})
       # cache.set("shopsilverburn", @tweets) if @tweets && Rails.env != "production"
     # rescue Twitter::BadRequest  => erl
     #   if Rails.env != "production"
