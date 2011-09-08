@@ -11,7 +11,7 @@ CenatusCms::Application.configure do
   config.cache_store = :dalli_store
 
   # Specifies the header that your server uses for sending files
-  config.action_dispatch.x_sendfile_header = "X-Sendfile"
+  config.action_dispatch.x_sendfile_header = nil
 
   # For nginx:
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
@@ -36,8 +36,10 @@ CenatusCms::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
-
+  config.assets.compile = true
+  # MSP TODO don't Heroku alteady run "rake assets:precompile" ??
+  # see :http://stackoverflow.com/questions/7275636/rails-3-1-0-actionviewtemplateerrror-application-css-isnt-precompiled
+  
   # Generate digests for assets URLs
   config.assets.digest = true
   
@@ -59,6 +61,6 @@ CenatusCms::Application.configure do
   config.active_support.deprecation = :notify
   
   # use the VCS files for prod
-  Sass::Plugin.options[:never_update] = true   
+  #Sass::Plugin.options[:never_update] = true
   
 end

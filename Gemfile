@@ -1,6 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0'
+#gem 'rails', '3.1.0'
+# https://github.com/sferik/rails_admin/issues/682
+gem 'rails', :git => 'git://github.com/rails/rails.git', :branch => '3-1-stable'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -44,6 +46,13 @@ gem 'acts-as-taggable-on'
 gem 'rails_admin_tag_list_field', :git => 'https://github.com/codeinvain/rails_admin_tag_list_field.git'
 gem 'acts_as_tree'
 gem 'dalli'
+gem 'thin'
+
+group :assets do
+  gem 'sass-rails'
+  gem 'coffee-script'
+  gem 'uglifier'
+end
 
 group :development, :test do
   gem "heroku_plus", :group => [:development]
@@ -59,4 +68,9 @@ group :development, :test do
   gem "sqlite3-ruby", "=1.3.3"
 
 end
+
+group :production do
+  gem 'pg'
+end
+
 
