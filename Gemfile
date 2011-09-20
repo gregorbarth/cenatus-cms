@@ -66,7 +66,7 @@ group :development, :test do
   gem "taps"
   gem "sqlite3", "=1.3.3"
   gem "sqlite3-ruby", "=1.3.3"
-
+  gem "therubyracer"
 end
 
 group :production do
