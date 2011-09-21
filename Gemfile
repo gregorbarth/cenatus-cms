@@ -63,6 +63,7 @@ group :development do
   gem "taps"
   gem "sqlite3", "=1.3.3"
   gem "sqlite3-ruby", "=1.3.3"
+  gem "rspec-rails", ">= 2.0.1"
 end
 
 group :test do
@@ -70,6 +71,7 @@ group :test do
   gem "cucumber-rails"
   gem "capybara"
   gem "execjs" #for CI on Heroku
+  gem "therubyracer" #for CI on Heroku
 end
 
 group :production do
