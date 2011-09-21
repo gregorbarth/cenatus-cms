@@ -54,19 +54,22 @@ group :assets do
   gem 'uglifier'
 end
 
-group :development, :test do
-  gem "heroku_plus", :group => [:development]
+group :development do
+  gem "heroku_plus"
   gem 'guard'
   gem 'guard-rspec'    
   gem 'rb-fsevent'
   gem 'growl'                                                                                                                          
-  gem "rspec-rails", ">= 2.0.1"
-  gem "cucumber-rails"
-  gem "capybara"
   gem "taps"
   gem "sqlite3", "=1.3.3"
   gem "sqlite3-ruby", "=1.3.3"
-  gem "therubyracer"
+end
+
+group :test do
+  gem "rspec-rails", ">= 2.0.1"
+  gem "cucumber-rails"
+  gem "capybara"
+  gem "execjs" #for CI on Heroku
 end
 
 group :production do
