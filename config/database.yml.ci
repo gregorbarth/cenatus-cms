@@ -3,7 +3,7 @@ test:
   adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: kndrxlzdoc
+  database: kndrxlzdoc_test
   pool: 5
   username: kndrxlzdoc
   password: PTTpg-pEg6NIEqEScfEo
