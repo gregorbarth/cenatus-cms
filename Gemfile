@@ -72,6 +72,7 @@ group :test do
   gem "capybara"
   gem "execjs" #for CI on Heroku
   gem "therubyracer" #for CI on Heroku
+  gem 'pg' #for CI on Heroku
 end
 
 group :production do
