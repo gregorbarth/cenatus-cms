@@ -73,6 +73,7 @@ group :test do
   gem "execjs" #for CI on Heroku
   gem "therubyracer" #for CI on Heroku
   gem 'pg' #for CI on Heroku
+  gem "fastercsv"
 end
 
 group :production do
