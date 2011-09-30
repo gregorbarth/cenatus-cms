@@ -1,10 +1,9 @@
-# postgres://kndrxlzdoc:PTTpg-pEg6NIEqEScfEo@ec2-107-20-191-127.compute-1.amazonaws.com/kndrxlzdoc
 test:
-  adapter: postgresql
+  adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: kndrxlzdoc
+  database: cenatus-cms_test
   pool: 5
-  username: kndrxlzdoc
-  password: PTTpg-pEg6NIEqEScfEo
-  host: ec2-107-20-191-127.compute-1.amazonaws.com
+  username: root
+  password:
+  socket: /tmp/mysql.sock
