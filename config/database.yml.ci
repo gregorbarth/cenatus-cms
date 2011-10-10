@@ -4,5 +4,5 @@ test:
   reconnect: false
   database: cenatus-cms_test
   pool: 5
-  username: root
-  password: c3natUs10
+  username: builder
+  password: integrates
