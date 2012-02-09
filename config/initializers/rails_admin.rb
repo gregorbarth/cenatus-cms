@@ -9,6 +9,14 @@ else
     #MSP You'll have to restart the server after config edit here
     #############################################################
 
+    config.current_user_method { current_user } # auto-generated
+
+    # If you want to track changes on your models:
+    config.audit_with :history, User
+
+    # Or with a PaperTrail: (you need to install it first)
+    # config.audit_with :paper_trail, User
+    
     config.included_models = ["Asset", "Category", "ContentArea", "Page", "User"]
 
     config.models do
