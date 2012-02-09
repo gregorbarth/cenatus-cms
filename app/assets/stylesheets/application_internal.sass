@@ -9,28 +9,29 @@ $dark_blue: #3d66ac
 $sky_blue:  #90b3df
 
 
-body
+body.bp
   color: $dark_blue
   a
     text-decoration: underline
     +link-colors($dark_blue, $sky_blue, $dark_blue, $dark_blue, $dark_blue)
 
-h1, h2, h3, h4, h5, h6
-  +header-text
-  text-transform: uppercase      
+  h1, h2, h3, h4, h5, h6
+    +header-text
+    text-transform: uppercase
+    color: #ff0000
   
   
-#header
-  #topnav
-    +horizontal-list-container
-    float: right
-    li
-      +horizontal-list-item
-      +column(2)
-      height: 100px
-      margin: 0px 3px
-      padding: 0px
+  #header
+    #topnav
+      +horizontal-list-container
+      float: right
+      li
+        +horizontal-list-item
+        +column(2)
+        height: 100px
+        margin: 0px 3px
+        padding: 0px
 
 
-.active
-  font-weight: bold
+  .active
+    font-weight: bold
