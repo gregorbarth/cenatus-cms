@@ -68,9 +68,9 @@ group :development do
   gem 'guard-rspec'
   gem 'rb-fsevent'
   gem 'growl'
-  gem "taps"
-  gem "sqlite3", "=1.3.3"
-  gem "sqlite3-ruby", "=1.3.3"
+  # gem "taps"
+  # gem "sqlite3", "=1.3.3"
+  # gem "sqlite3-ruby", "=1.3.3"
   gem "rspec-rails"
 end
 
