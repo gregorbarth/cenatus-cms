@@ -8,7 +8,8 @@ gem 'rails', '~> 3.2.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', '~> 0.3.10'
+# gem 'mysql2', '~> 0.3.10'
+gem 'pg'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -38,7 +39,7 @@ gem 'devise'
 gem "rails_admin", :git => "git://github.com/sferik/rails_admin.git"
 #no longer required as compass-rails in assets below.
 #gem 'compass'
-gem 'aws-s3'    
+gem 'aws-sdk'    
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem "friendly_id", "~> 3.2.1"
 gem 'twitter'
@@ -49,6 +50,7 @@ gem 'rails_admin_tag_list_field', :git => 'https://github.com/kryzhovnik/rails_a
 gem 'acts_as_tree'
 gem 'dalli'
 gem 'thin'
+
 
 group :assets do
   gem 'compass-rails','~> 1.0.0.rc.2'
@@ -78,7 +80,7 @@ group :test do
   gem "capybara"
   gem "execjs" #for CI on Heroku
   gem "therubyracer" #for CI on Heroku
-  gem 'pg' #for CI on Heroku
+  # gem 'pg' #for CI on Heroku
   gem "fastercsv"
   gem "faker"
   gem 'factory_girl'
@@ -88,7 +90,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
+  # gem 'pg'
 end
 
 

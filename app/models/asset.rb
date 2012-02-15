@@ -4,8 +4,9 @@ class Asset < ActiveRecord::Base
   
   validates :name, :presence => true
   validates :description, :presence => true
-
-  # has_attached_file :asset, :storage => :s3, :s3_credentials => "#{Rails.root}/config/s3.yml", :bucket => 'virgin.s3.amazonaws.com', :path => ":attachment/:id/:style.:extension", :styles => { :medium => "120x120>", :thumb => "40x40>" }
+  
+  #TODO  change to correct bucket name
+  # has_attached_file :asset, :storage => :s3, :s3_credentials => "#{Rails.root}/config/s3.yml", :bucket => 'virgin', :path => ":attachment/:id/:style.:extension", :styles => { :medium => "120x120>", :thumb => "40x40>" }
   has_attached_file :asset, :styles => { :medium => "120x120>", :thumb => "40x40>" }
   
   attr_accessor :delete_image
