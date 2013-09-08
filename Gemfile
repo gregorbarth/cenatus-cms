@@ -50,6 +50,7 @@ gem 'rails_admin_tag_list_field', :git => 'https://github.com/kryzhovnik/rails_a
 gem 'acts_as_tree'
 gem 'dalli'
 gem 'thin'
+gem "memcachier"
 
 
 group :assets do
