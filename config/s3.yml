@@ -1,10 +1,10 @@
 development:
-  access_key_id: "AKIAJDT7QLBNBTMDHJBA"
-  secret_access_key: "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"
+  access_key_id: "XXXX"
+  secret_access_key: "YYYY"
 test:
-  access_key_id: "AKIAJDT7QLBNBTMDHJBA"
-  secret_access_key: "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"
+  access_key_id: "XXXX"
+  secret_access_key: "YYYY"
 production:
-  access_key_id: "AKIAJDT7QLBNBTMDHJBA"
-  secret_access_key: "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"
+  access_key_id: "XXXX"
+  secret_access_key: "YYYY"
 #TODO add correct security credentials
