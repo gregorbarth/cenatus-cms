@@ -2,12 +2,14 @@ source 'http://rubygems.org'
 
 #gem 'rails', '3.1.0'
 # https://github.com/sferik/rails_admin/issues/682
-gem 'rails', :git => 'git://github.com/rails/rails.git', :branch => '3-1-stable'
+#gem 'rails', :git => 'git://github.com/rails/rails.git', :branch => '3-1-stable'
+gem 'rails', '~> 3.2.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+# gem 'mysql2', '~> 0.3.10'
+gem 'pg'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -35,21 +37,28 @@ gem "haml-rails"
 gem "jquery-rails"
 gem 'devise'
 gem "rails_admin", :git => "git://github.com/sferik/rails_admin.git"
-gem 'compass'
-gem 'aws-s3'    
+#no longer required as compass-rails in assets below.
+#gem 'compass'
+gem 'aws-sdk'    
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem "friendly_id", "~> 3.2.1"
 gem 'twitter'
 gem 'acts_as_indexed'
 gem 'RedCloth'
 gem 'acts-as-taggable-on'
-gem 'rails_admin_tag_list_field', :git => 'https://github.com/codeinvain/rails_admin_tag_list_field.git'
+gem 'rails_admin_tag_list_field', :git => 'https://github.com/kryzhovnik/rails_admin_tag_list_field.git'
 gem 'acts_as_tree'
 gem 'dalli'
 gem 'thin'
+gem "memcachier"
+
 
 group :assets do
-  gem 'sass-rails'
+  gem 'compass-rails','~> 1.0.0.rc.2'
+  #Compass plugins optional below
+  #gem 'compass-colors'
+  #gem 'sassy-buttons'
+  gem 'sass-rails', '~> 3.2.3'
   gem 'coffee-script'
   gem 'uglifier'
 end
@@ -57,26 +66,32 @@ end
 group :development do
   gem "heroku_plus"
   gem 'guard'
-  gem 'guard-rspec'    
+  gem 'guard-rspec'
   gem 'rb-fsevent'
-  gem 'growl'                                                                                                                          
-  gem "taps"
-  gem "sqlite3", "=1.3.3"
-  gem "sqlite3-ruby", "=1.3.3"
-  gem "rspec-rails", ">= 2.0.1"
+  gem 'growl'
+  # gem "taps"
+  # gem "sqlite3", "=1.3.3"
+  # gem "sqlite3-ruby", "=1.3.3"
+  gem "rspec-rails"
 end
 
 group :test do
-  gem "rspec-rails", ">= 2.0.1"
+  gem "rspec-rails"
   gem "cucumber-rails"
   gem "capybara"
   gem "execjs" #for CI on Heroku
   gem "therubyracer" #for CI on Heroku
-  gem 'pg' #for CI on Heroku
+  # gem 'pg' #for CI on Heroku
+  gem "fastercsv"
+  gem "faker"
+  gem 'factory_girl'
+  gem 'factory_girl_rails'
+
+
 end
 
 group :production do
-  gem 'pg'
+  # gem 'pg'
 end
 
 

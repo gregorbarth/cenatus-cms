@@ -1,15 +1,10 @@
 development:
-  access_key_id: "AKIAJDT7QLBNBTMDHJBA"
-  secret_access_key: "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"
-  url: "XXX.s3.amazonaws.com"
+  access_key_id: "XXXX"
+  secret_access_key: "YYYY"
 test:
-  access_key_id: "AKIAJDT7QLBNBTMDHJBA"
-  secret_access_key: "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"
-  url: "XXX.s3.amazonaws.com"
+  access_key_id: "XXXX"
+  secret_access_key: "YYYY"
 production:
-  access_key_id: "AKIAJDT7QLBNBTMDHJBA"
-  secret_access_key: "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"
-  url: "XXX.s3.amazonaws.com"
-
-
-#'nal.s3-website-eu-west-1.amazonaws.com
+  access_key_id: "XXXX"
+  secret_access_key: "YYYY"
+#TODO add correct security credentials
